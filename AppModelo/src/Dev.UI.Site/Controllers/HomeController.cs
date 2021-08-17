@@ -23,13 +23,13 @@ namespace Dev.UI.Site.Controllers
 
         //Injeção de dependencia para aplicações legado, quando não se pode alterar o contrutor
         //**
-        public IActionResult Index([FromServices] IPedidoRepository _pedidoRepository)
+        public IActionResult Index(/*[FromServices] IPedidoRepository _pedidoRepository*/)
         {
             var pedido = _pedidoRepository.ObterPedido();
 
             return View();
         }
-        //**
+        //**  
 
     }
 }
